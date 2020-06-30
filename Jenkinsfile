@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Prepare Workspace') {
             steps {
-                ws (sanitizedWorkspaceName) {
+                ws ("/home/jenkins/workspace/pipeline") {
                     echo "Preparing Git workspace"
                     checkout([
         				$class: 'GitSCM',
