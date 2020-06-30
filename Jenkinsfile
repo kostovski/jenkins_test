@@ -16,7 +16,7 @@ pipeline {
                     echo "Preparing Git workspace"
                     checkout([
         				$class: 'GitSCM',
-        				branches: [[name: projectBranch]],
+        				branches: [[name: "master"]],
         				browser: [$class: 'Stash',repoUrl: gitUrl],
         				doGenerateSubmoduleConfigurations: false,
         				extensions: [
