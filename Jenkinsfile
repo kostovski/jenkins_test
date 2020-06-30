@@ -1,5 +1,4 @@
 pipeline {
-    agent { label 'ops-critical' }
     options {
         checkoutToSubdirectory('src')
         buildDiscarder(logRotator(numToKeepStr: '14'))
