@@ -45,9 +45,9 @@ pipeline {
                 }
             }
         }
-        stage('Pause Config Sync and Triggers') {
+        stage('test') {
             steps {
-                echo "Pause Triggers"
+                echo "Test"
             }
         }
     }
