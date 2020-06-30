@@ -1,4 +1,5 @@
 pipeline {
+    agent {any}
     options {
         checkoutToSubdirectory('src')
         buildDiscarder(logRotator(numToKeepStr: '14'))
