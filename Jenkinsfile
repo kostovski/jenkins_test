@@ -13,11 +13,11 @@ pipeline {
         stage('Prepare Workspace') {
             steps {
                 git credentialsId: 'kostovski_githab', url: 'https://github.com/kostovski/jenkins_test.git'
+            }
         }
         stage('test') {
             steps {
                 echo "Test"
-                }
             }
         }
     }
