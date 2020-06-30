@@ -7,7 +7,7 @@ pipeline {
     environment{
         //def job params go here
         def github = 'kostovski'
-        def gitUrl = 'https://github.com/kostovski/jenkins_test.git'
+        def gitUrl = 'url-here'
     }
     stages {
         stage('Prepare Workspace') {
